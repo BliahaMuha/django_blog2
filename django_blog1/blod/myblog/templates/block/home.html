@@ -1,5 +1,5 @@
 {% extends './base.html' %}
-
+{% load static %}
 {% block title %}Главная страница моего блога{% endblock %}
 
 {% block header %}
@@ -9,7 +9,8 @@
 {% block content %}
     <div class="container">
       <h1 class="my-3">Последние записи блога</h1>
-      <div class="row">
+      {{posts}}
+      <!-- <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img src="img/third_img.jpg" alt="" class="card-img-top">
@@ -23,9 +24,9 @@
                 <small class="text-muted">22.10.2020</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img src="img/second_image.jpg" alt="" class="card-img-top">
             <div class="card-body">
@@ -102,7 +103,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 {% endblock %}
 
 {% block pagination %}
